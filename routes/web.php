@@ -26,7 +26,7 @@ Route::group(['prefix' => 'admin'], function() {
     //Laravel 16でさらに追加
     Route::get('news/delete', 'Admin\NewsController@delete')->middleware('auth');
 });
-//laravel 13 課題
+
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('profile/create', 'Admin\ProfileController@add');
     Route::post('profile/create', 'Admin\ProfileController@create');

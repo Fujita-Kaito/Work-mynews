@@ -87,4 +87,5 @@ class ProfileController extends Controller
       $news->delete();
       return redirect('admin/profile/');
   }
+
 }
